@@ -1,4 +1,4 @@
-{% set version = "0.76-0" %}
+{% set version = "0.77-0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/diptest_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/diptest/diptest_{{ version }}.tar.gz
-  sha256: 508a5ebb161519cd0fcd156dc047b51becb216d545d62c6522496463f94ec280
+  sha256: c3c835155e6bddce730623c4e9b4eeed00624c26d493076e79db203a55f8ca32
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
