@@ -1,4 +1,4 @@
-{% set version = "0.77-1" %}
+{% set version = "0.77-2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/diptest_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/diptest/diptest_{{ version }}.tar.gz
-  sha256: 224eae00f483ce0fb131719065667227417cc98ad2beda55bfd5efe2bb612813
+  sha256: 3babf6964be9865a3d872c95c8c8ed49953240e7db5717718893a110d3ebcb3f
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
